@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { Route } from "react-router-dom/cjs/react-router-dom";
+import Home from "./Screens/Home/Home";
+import Favoritos from "./Screens/Favoritos/Favoritos";
+import Populares from "./Screens/Populares/Populares";
+import Cartel from "./Screens/Cartel/Cartel";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+
+    <Switch>
+      <Route path="/" exact={true} component={Home}/>
+      <Route path="/favoritos" exact={true} component={Favoritos}/>
+      <Route path="/populares" exact={true} component={Populares}/>
+      <Route path="/cartel" exact={true} component={Cartel}/>
+    </Switch>
+    
+  </React.Fragment>
+
   );
+
 }
 
 export default App;

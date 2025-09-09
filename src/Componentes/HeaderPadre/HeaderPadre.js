@@ -1,0 +1,16 @@
+
+import { Link } from "react-router-dom";
+
+
+function HeaderPadre(){
+    let itemsMenu=[{ruta:"/", name:"Home"},{ruta:"/favoritos", name:"Favoritos"}, {ruta:"/populares", name:"Populares"}, {ruta:"/cartel", name:"Cartel"}]
+    return (<nav>
+         <ul
+            className="main-nav">
+            {itemsMenu.map((item)=> <li><Link to = {item.ruta}> {item.name}</Link></li>)}
+           
+            </ul>
+    </nav>)
+}
+
+export default HeaderPadre
