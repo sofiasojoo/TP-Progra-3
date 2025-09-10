@@ -44,8 +44,14 @@ render()
     <section className="character-card">
         {this.state.data === "" ? 
         <h3>Cargando...</h3> : 
-        <h3 className="character-card">{this.state.data.map((item, idx)=> <PopularesHijo key={item + idx} info= {item} borrar = {() => this.borrar(item.id)}/>)}
-        </h3>}
+        <h3 className="character-card">
+            {this.state.data.map((item, index) => 
+            {if (index < 4) {
+                return <PopularesHijo key={item.id} info={item} />;
+            } else {
+                return ""; 
+            }
+})}</h3>}
     </section> 
     </div>
      

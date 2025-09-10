@@ -8,7 +8,7 @@ function Home(){
     <React.Fragment>
       <HeaderPadre />
       <PopularesPadre/>
-      <h1>Home page</h1>
+     
     
       <Footer />
     </React.Fragment>
