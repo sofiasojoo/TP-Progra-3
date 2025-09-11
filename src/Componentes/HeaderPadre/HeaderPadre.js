@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 function HeaderPadre(){
-    let itemsMenu=[{ruta:"/", name:"Home"},{ruta:"/favoritos", name:"Favoritos"}, {ruta:"/populares", name:"Populares"}, {ruta:"/cartel", name:"Cartel"}]
+    let itemsMenu=[{ruta:"/", name:"Home"},{ruta:"/favoritos", name:"Favoritos"}, {ruta:"/populares", name:"Populares"}, {ruta:"/cartelera", name:"Cartel"}]
     return (<nav>
          <h1>Nombre del grupo</h1>
          <ul

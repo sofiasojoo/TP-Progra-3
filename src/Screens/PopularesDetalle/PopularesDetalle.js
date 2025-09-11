@@ -1,19 +1,19 @@
 import React from "react";
 import Footer from "../../Componentes/Footer/Footer";
 import HeaderPadre from "../../Componentes/HeaderPadre/HeaderPadre";
-import CarteleraPadre from "../../Componentes/CarteleraPadre/CarteleraPadre";
 
-function Cartel(){
+
+function PopularesDetalle(){
   return (
     <React.Fragment>
       <HeaderPadre />
-      <h1>Peliculas en Cartel</h1>
+      <h1>Populares Detalle</h1>
 
-      <CarteleraPadre/>
+      
     
       <Footer />
     </React.Fragment>
   );
 }
 
-export default Cartel;
+export default PopularesDetalle;

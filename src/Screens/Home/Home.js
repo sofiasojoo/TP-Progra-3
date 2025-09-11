@@ -8,7 +8,9 @@ function Home(){
   return (
     <React.Fragment>
       <HeaderPadre />
+      <h1>Peliculas populares</h1>
       <PopularesPadre/>
+      <h1>Peliculas en Cartelera</h1>
       <CarteleraPadre/>
      
     
